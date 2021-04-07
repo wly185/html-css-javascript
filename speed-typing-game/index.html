@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>speed typer</title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+    <div id="settings" class="settings">
+      <form action="" id="settings-form">
+        <div>
+          <label for="difficulty">difficulty</label>
+          <select id="difficulty">
+            <option value="easy" selected>easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h2>speed typer</h2>
+      <small>type the following:</small>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="type the word here"
+      />
+      <p class="time-container">time left: <span id="time">10s</span></p>
+
+      <p class="score-container">score: <span id="score">0</span></p>
+    </div>
+    <div id="end-game-container" class="end-game-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

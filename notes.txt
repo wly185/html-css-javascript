@@ -1,0 +1,29 @@
+49
+
+The composedPath() method of the Event interface returns the event’s path which is an array of the objects on which listeners will be invoked.
+
+event bubbling
+
+The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
+
+The DOMTokenList interface represents a set of space-separated tokens. Such a set is returned by Element.classList
+
+use .join('') to make an array into an empty string
+
+63
+
+this vs e.target vs e.currentTarget
+audio api
+
+
+sortable list
+- error due to = vs ===, for loop crashed the browser
+- drag and drop api sibei chim T-T
+- sort syntax is kinda weird, and rmb to use the return keyword
+- for / if else => you can test the thing with console log 1,2,3 etc for different conditions
+- if else => most general condition first
+- if the type is string, comparison will fail => get single kind of result. explore type coercion or compare type beforehand
+- error with using 0>i>2 in the if statement
+
+- e.target is more specific, use this.closest('selector') if you want the parent or something
+- you can set custom attributes but they must have te data prefix, you can use getattribute to retrieve them later on

@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="progress.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>custom video player</title>
+  </head>
+  <body>
+    <h1>custom video player</h1>
+    <!-- poster is for a static image. simply adding controls will give you a normal video with standard controls -->
+    <video src="gone.mp4" id="video" class="screen" poster="poster.png"></video>
+
+    <div class="controls">
+      <button class="btn" id="play"><i class="fa fa-play fa-2x"></i></button>
+      <!-- <button class="btn" id="pause"><i class="fa fa-pause fa-2x"></i></button> -->
+      <button class="btn" id="stop_button">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+
+      <!-- input:range is slider control input https://www.w3schools.com/tags/att_input_type_range.asp -->
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        step="0.1"
+        id="progress"
+        class="progress"
+      />
+      <span class="timestamp" id="timestamp">0:00</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

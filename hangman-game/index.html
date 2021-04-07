@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>hangman</title>
+  </head>
+  <body>
+    <h1>hangman</h1>
+    <p>find the hidden word, enter a letter</p>
+    <div class="game-container">
+      <!-- https://www.w3schools.com/graphics/svg_intro.asp -->
+      <svg class="figure-container" width="200" height="250">
+        <!-- pole -->
+        <line x1="60" y1="20" x2="140" y2="20"></line>
+        <line x1="140" x2="140" y1="20" y2="50"></line>
+        <line x1="60" x2="60" y1="20" y2="230"></line>
+        <line x1="20" x2="100" y1="230" y2="230"></line>
+        <!-- head -->
+        <circle cx="140" cy="70" r="20"></circle>
+
+        <!-- body -->
+        <line x1="140" x2="140" y1="90" y2="150"></line>
+        <!-- arm -->
+        <line x1="140" x2="100" y1="120" y2="100"></line>
+        <line x1="140" x2="180" y1="120" y2="100"></line>
+        <!-- leg -->
+        <line x1="140" x2="100" y1="150" y2="180"></line>
+        <line x1="140" x2="180" y1="150" y2="180"></line>
+      </svg>
+
+      <!-- wrong letters -->
+      <div class="wrong-letters-container">
+        <div id="wrong-letter">
+          <p>wrong</p>
+        </div>
+      </div>
+
+      <!-- input letters -->
+      <div class="word" id="word">
+        <!-- <div class="letter">h</div>
+        <div class="letter">e</div>
+        <div class="letter">l</div>
+        <div class="letter">l</div>
+        <div class="letter">o</div> -->
+      </div>
+    </div>
+
+    <!-- outside of game container -->
+
+    <!-- container for final message -->
+    <div class="pop-up-container" id="pop-up-container">
+      <div class="pop-up">
+        <h2 id="final-message">you have won</h2>
+        <button id="play-button">play again</button>
+      </div>
+    </div>
+
+    <!-- notification -->
+    <div class="notification" id="notification-container">
+      <p>you have already entered this letter</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

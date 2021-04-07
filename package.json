@@ -1,0 +1,14 @@
+{
+  "name": "html-mini-site-traversy-udemy",
+  "version": "1.0.0",
+  "description": "mini sites with vanilla html css from traversy on udemy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wly185",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

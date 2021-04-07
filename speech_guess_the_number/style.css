@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2f3542
+    url('https://www.bernardmarr.com/img/5%20Ways%20To%20Present%20Data%20To%20People%20Who%20Are%20Scared%20of%20Numbers.png')
+    no-repeat left center/cover;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.mic {
+  font-size: 200px;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* z-index: 1; */
+}
+body * {
+  z-index: 1;
+}
+
+h1,
+h3 {
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.play-again {
+  padding: 8px 15px;
+  border: 0;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.msg {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.box {
+  border: 1px solid #dedede;
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
